@@ -6,14 +6,20 @@ import './Brands.css'
 import { useQuery } from 'react-query'
 import { Link } from 'react-router-dom'
 import PageHeader from '../../SubComponents/PageHeader/PageHeader'
+import { Helmet } from 'react-helmet'
+
 function Brands() {
   function getAllBrands(){
     return axios.get(`https://ecommerce.routemisr.com/api/v1/brands`)
   }
   let {data} = useQuery('getBrands',getAllBrands)
-  console.log(data?.data)
   return (  
     <section id='brands'>
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>Brands</title>
+            <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
       <div className='container'>
       <div className="row m-0">
         <div className="col-lg-3 p-0">

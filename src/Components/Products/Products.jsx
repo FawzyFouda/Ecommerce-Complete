@@ -10,6 +10,7 @@ import { CartContext } from '../../Context/CartContext/CartContext'
 import { ToastContainer, toast } from 'react-toastify';
 import { InfinitySpin } from 'react-loader-spinner'
 import { WishlistContext } from '../../Context/WishlistContext/WishlistContext'
+import { Helmet } from 'react-helmet'
 
 
 function Products() {
@@ -35,6 +36,11 @@ function Products() {
 // ------------------------------------------------------------------
 return (
     <section id='products'>
+        <Helmet>
+                <meta charSet="utf-8" />
+                <title>Products</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
       <div className='container'>
       <SubnavSidebar/>
       </div>

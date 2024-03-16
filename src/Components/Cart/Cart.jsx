@@ -7,6 +7,7 @@ import { ToastContainer, toast } from 'react-toastify'
 import EmptyCart from '../../utilities/Images/empty-cart.png'
 import { Link } from 'react-router-dom'
 import { InfinitySpin } from 'react-loader-spinner'
+import { Helmet } from 'react-helmet'
 
 function Cart() {
   let {cartAllProducts,cartTotalCartPrice,UpdateCartItemApi,removeCartItemApi,clearCartApi,isLoading} = useContext(CartContext)
@@ -48,6 +49,11 @@ async function updateItem(productId,count){
 // ---------------------------------------------
   return (
     <section id='cart'>
+       <Helmet>
+                <meta charSet="utf-8" />
+                <title>Cart</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
       <div className='container'>
       <SubnavSidebar/>
       </div>
