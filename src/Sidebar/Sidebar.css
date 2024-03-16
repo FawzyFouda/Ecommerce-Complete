@@ -1,0 +1,58 @@
+.sidebar{
+    font-family: 'Times New Roman', Times, serif !important;
+}
+.sidebar-label-container{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.sidebar-label-container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+
+}
+.sidebar-label-container .checkmark{
+    border:1px solid black
+}
+.sidebar-label-container .checkmark::after{
+    content: '';
+    position: absolute;
+    display: none;
+    top: 34%;
+    left: 19%;
+    transform: translateX(50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background:  #FFF ;
+    border: 1px solid #000;
+}
+.sidebar-label-container input:checked ~ .checkmark::after{
+    display: block;
+}
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+
+}
+.sidebar-label-container:hover input ~ .checkmark{
+    background-color: #ccc;
+
+}
+.sidebar-label-container input:checked ~ .checkmark{
+    background-color: #2196f3;
+   
+}

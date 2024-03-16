@@ -1,0 +1,14 @@
+
+.pages-links a{
+color: var(--dark) !important;
+}
+.pages-links a.active{
+    color: var(--e-global-color-primary) !important;
+}
+.sidebar{
+    height: 100%;
+}
+#wishlist span i:hover{
+    color: var(--e-global-color-primary);
+}
+

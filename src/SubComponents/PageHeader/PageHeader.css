@@ -1,0 +1,10 @@
+.page-header{
+    background: var(--secondary);
+    padding: 150px 0;
+  }
+  .page-header .title{
+   color: var(--e-global-color-primary);
+  }
+  .page-header i{
+    font-size: 0.7rem;
+  }

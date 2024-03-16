@@ -1,0 +1,60 @@
+#protected {
+    width: 100%;
+    position: fixed;
+    background: #000000a1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#protected .layer{
+    position: fixed;
+    z-index: 22;
+    width: 50%;
+    margin:auto;
+    position: fixed;
+    background: #000000b4;
+
+    padding: 50px 100px;
+    border-radius: 5px;
+}
+#protected .layer h2{
+    padding: 100px 0 40px 0;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFF;
+}
+#protected .layer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0 100px 0;
+    color: #FFF;
+}
+#protected .layer div a{
+    padding: 0 5px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #FFF;
+    transition: all 0.5s;
+    background: #221717c4;
+    padding:2px 20px;
+    border-radius: 3px;
+}
+#protected .layer div span{
+    margin: 20px 0;
+}
+#protected .layer div a:hover{
+    background: rgb(43, 39, 39);
+}
+#protected .layer div a:last-of-type{
+    padding:2px 20px !important;
+}
+#protected a{
+    position: relative;
+    z-index: 22;
+}

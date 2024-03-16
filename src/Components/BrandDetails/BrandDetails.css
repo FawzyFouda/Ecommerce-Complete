@@ -1,0 +1,6 @@
+.branddetails .brandImg{
+    margin-bottom: 100px !important;
+}
+.branddetails h1{
+    color: var(--e-global-color-primary);
+}

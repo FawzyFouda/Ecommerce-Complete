@@ -1,0 +1,102 @@
+#cart{
+    margin-bottom: 50px;
+}
+#cart .left{
+    color: var(--e-global-color-secondary);
+    font-size: 14px;
+}
+#cart .left span i{
+    color: var(--e-global-color-lighter);
+    transition: all 0.5s;
+}
+#cart .left .removeProduct:hover i{
+    color: red;
+}
+#cart .left .productName .productNameText{
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+#cart .left .productName .productNameText:hover{
+    color: var( --e-global-color-primary);
+}
+#cart .left .productCount div{
+    position: relative;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    align-items: center;
+}
+#cart .left .productCount div button{
+    position: absolute;
+    background: var(--e-global-color-border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: 0;
+}
+#cart .left .productCount div button:hover{
+    background: #000;
+    color: #FFF;
+}
+#cart .left .productCount div .increase{
+    right: 0;
+    margin-right: 10px;
+}
+#cart .left .productCount div .decrease{
+    left: 0;
+    margin-left: 10px;
+}
+#cart .left  .clear{
+    border: 0;
+    padding: 20px 50px;
+    width: 50%;
+    background: var(--e-global-color-primary);
+    color: #FFF;
+    border-radius: 35px;
+    transition: all 0.5s;
+}
+#cart .left  .clear:hover{
+    background: #000;
+}
+#cart .left .emptyCart button{
+    border: 0;
+    padding: 10px 30px;
+    background: var(--e-global-color-primary);
+    color: #FFF;
+    border-radius: 35px;
+    transition: all 0.5s;
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+#cart .left .emptyCart button:hover{
+    background: #000;
+}
+#cart .right{
+    border: 5px solid var(--e-global-color-border);
+    border-radius: 5px;
+    padding: 30px 30px;
+    height: 400px;
+}
+#cart .right .checkout{
+    border: 0;
+    padding: 20px 50px;
+    width: 95%;
+    background: var(--e-global-color-primary);
+    color: #FFF;
+    border-radius: 35px;
+    transition: all 0.5s;
+}
+#cart .right .checkout:hover{
+    background: #000;
+}
+.bg-n:hover{
+    background: var(--e-global-color-border) !important;
+    color: var(--e-global-color-border) !important;
+}

@@ -1,0 +1,31 @@
+#wishlist .addCart{
+    border: 0;
+    padding: 10px 15px;
+    width: 45%;
+    background: var(--e-global-color-primary);
+    color: #FFF;
+    border-radius: 35px;
+    transition: all 0.5s;
+}
+#wishlist .addCart:hover{
+    background: #000;
+}
+#wishlist  span i{
+    color: var(--e-global-color-lighter);
+    transition: all 0.5s;
+}
+#wishlist .removeProduct:hover i{
+    color: red;
+}
+#wishlist .productNameText a{
+    transition:  all 0.5s;
+    color: var(--e-global-color-secondary) !important;
+    cursor: pointer;
+}
+#wishlist .productNameText a:hover{
+    color: var( --e-global-color-primary) !important;
+}
+
+#wishlist .productPrice del{
+    color:var(--e-global-color-lighter)
+}

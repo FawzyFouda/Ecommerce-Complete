@@ -1,0 +1,8 @@
+#checkout button{
+    border: 1px solid var(--e-global-color-border);
+    color: #000;
+}
+#checkout button:hover{
+    background: var(--e-global-color-primary);
+    color: #FFF;
+}

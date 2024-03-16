@@ -1,0 +1,31 @@
+#categories h2{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: var(--font-family-sans-serif);
+    padding: 10px 0;
+}
+
+#categories .catimg{
+    height: 350px;
+}
+#categories .catCard a{
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 1.5rem;
+        transform: translateX(-50%);
+        opacity: 0;
+}
+#categories .catCard:hover a{
+    opacity: 1;
+}
+#categories .catCard div:last-of-type{
+    transition: all 0.5s;
+}
+
+#categories .catimg img{
+    transition: all .5s;
+}
+#categories .catimg:hover img{
+    transform: scale(1.2,1.2);
+}

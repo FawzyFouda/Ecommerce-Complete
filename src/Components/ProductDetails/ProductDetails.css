@@ -1,0 +1,66 @@
+#productDetails .infos .title{
+    font-family: var( --font-family-Marcellus);
+}
+#productDetails .infos .addCart{
+    background: #000;
+    padding: 15px 40px;
+    color: #FFF;
+    transition: all 0.5s;
+    border-radius: 30px;
+    border: 0;
+}
+
+#productDetails .infos  .price span:first-of-type{
+    color: var(--e-global-color-primary);
+}
+#productDetails .infos  .price .pricebefor{
+    color: var(--e-global-color-lighter);
+}
+#productDetails .infos .brand span:first-of-type{
+    color: var(--e-global-color-lighter);
+}
+#productDetails .infos .ratingQuantity{
+    color: var(--e-global-color-lighter);
+}
+#productDetails .infos  .catDetails,#productDetails .infos  .update{
+    font-size: 0.9rem;
+}
+#productDetails .infos .editCounter{
+
+    padding: 15px 80px;
+    color: #000;
+    transition: all 0.5s;
+    border-radius: 30px;
+    border: 1px solid #EAEAEA;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 0.9rem;
+}
+#productDetails .infos .editCounter button{
+    position: absolute;
+    display: block;
+    border: 0;
+    padding: 12px;
+    margin:0 10px;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 1.1rem;
+}
+#productDetails .infos .editCounter button:hover{
+    background: #EAEAEA;
+}
+#productDetails .infos .editCounter button:first-of-type{
+    right: 0;
+}
+#productDetails .infos .editCounter button:last-of-type{
+    left: 0;
+}
+#productDetails .infos .addCart:hover{
+    background: var(--e-global-color-primary);
+}
