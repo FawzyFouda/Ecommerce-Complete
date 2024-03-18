@@ -34,7 +34,7 @@ function ProductDetails() {
     const res = await addProductCartApi(productId) 
   }
   // ---------------------------------------------
-iop
+
 // ---------------------------------------------
   let {data,isLoading} = useQuery('getProductDetails',() => getProductDetails(id))
   console.log(data)
