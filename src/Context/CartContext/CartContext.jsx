@@ -23,6 +23,7 @@ export default function CartContextProvider(props) {
             .then((res) =>{
                 if(res.data){
                     setIsLoading(false)
+                    console.log(res)
                 }
             setCartAllProducts(res.data.data.products)
             setNumOfCartItems(res.data.numOfCartItems)
@@ -30,7 +31,12 @@ export default function CartContextProvider(props) {
             setCartId(res.data.data._id)
             }
             )
-            .catch((error) => error)
+            .catch((error) => {
+               console.log(error)
+               if(error.response.status == 404){
+                setIsLoading(false)
+            }
+            })
     }
 // ---------------------------------------------
     async function addProductCartApi(productId){ //to add products to cart 

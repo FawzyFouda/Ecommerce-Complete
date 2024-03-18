@@ -49,7 +49,18 @@ async function updateItem(productId,count){
 // ---------------------------------------------
   return (
     <section id='cart'>
-       <Helmet>
+      {
+        isLoading?
+        <div className='loading'>
+            <InfinitySpin
+        visible={true}
+        width="100%"
+        height='100%'
+        color="#4fa94d"
+        ariaLabel="infinity-spin-loading"
+        />
+        </div>:<>
+        <Helmet>
                 <meta charSet="utf-8" />
                 <title>Cart</title>
                 <link rel="canonical" href="http://mysite.com/example" />
@@ -59,13 +70,7 @@ async function updateItem(productId,count){
       </div>
       <PageHeader title='cart'/>
       {
-        isLoading? <InfinitySpin
-        visible={true}
-        width="100%"
-        height='100%'
-        color="#4fa94d"
-        ariaLabel="infinity-spin-loading"
-        />:<div className='container-fluid py-5' id='Cart'>
+         <div className='container-fluid py-5' id='Cart'>
         <div  className={`d-flex mx-4 ${cartAllProducts?.length?'justify-content-between':'justify-content-center'}`}>
           <div className='left col-md-7'>
             {
@@ -125,6 +130,9 @@ async function updateItem(productId,count){
         <ToastContainer icon={false} stacked />
       </div>
       }
+        </>
+      }
+       
       
     </section>
   )

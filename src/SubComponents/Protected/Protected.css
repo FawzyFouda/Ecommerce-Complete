@@ -16,8 +16,7 @@
     width: 50%;
     margin:auto;
     position: fixed;
-    background: #000000b4;
-
+    background: #a39191e5;
     padding: 50px 100px;
     border-radius: 5px;
 }
@@ -28,10 +27,6 @@
     color: #FFF;
 }
 #protected .layer div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 0px 0 100px 0;
     color: #FFF;
 }
@@ -41,12 +36,13 @@
     text-transform: capitalize;
     color: #FFF;
     transition: all 0.5s;
-    background: #221717c4;
     padding:2px 20px;
     border-radius: 3px;
+    background: #000;
 }
 #protected .layer div span{
     margin: 20px 0;
+
 }
 #protected .layer div a:hover{
     background: rgb(43, 39, 39);

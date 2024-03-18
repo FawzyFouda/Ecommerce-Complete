@@ -16,14 +16,17 @@ console.log(data)
 
   return (
     <div id="categories">
-        <div className='d-flex flex-wrap w-100'>
+        <div className='d-flex flex-wrap w-100 justify-content-center'>
           {
-            isLoading?<InfinitySpin
+            isLoading?
+            <div className='loading'>
+              <InfinitySpin
             visible={true}
             width="200"
             color="#4fa94d"
             ariaLabel="infinity-spin-loading"
-            />:
+            />
+            </div>:
             data?.data?.data?.map((cat) =>{
               return<>
                     <Link to={`/categoryDetails/${cat._id}`} className='catCard  col-md-4 position-relative p-0 px-3  my-3 cursor-pointer d-block'>

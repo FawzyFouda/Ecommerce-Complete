@@ -36,7 +36,16 @@ function Products() {
 // ------------------------------------------------------------------
 return (
     <section id='products'>
-        <Helmet>
+      {
+         isLoading? <div className='loading'>
+         <InfinitySpin
+         visible={true}
+         width="200"
+         color="#4fa94d"
+         ariaLabel="infinity-spin-loading"
+         />
+         </div>:<>
+         <Helmet>
                 <meta charSet="utf-8" />
                 <title>Products</title>
                 <link rel="canonical" href="http://mysite.com/example" />
@@ -49,12 +58,7 @@ return (
       <div className='getProduct row justify-content-center'>
         
         {
-          isLoading?<InfinitySpin
-          visible={true}
-          width="200"
-          color="#4fa94d"
-          ariaLabel="infinity-spin-loading"
-          />:
+          
           data?.data?.data.map((product) => {
             return<div className='getProduct-content col-md-3 g-3' key={product.id}>
                     <div className='text-center d-flex flex-column align-items-center position-relative border'>
@@ -83,6 +87,9 @@ return (
         <ToastContainer icon={false} stacked />
       </div>
       </div>
+         </>
+      }
+        
     </section>
   )
 }

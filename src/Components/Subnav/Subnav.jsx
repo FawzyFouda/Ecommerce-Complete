@@ -21,14 +21,13 @@ function Subnav() {
     return (
     <>
         {
-            <div className="container-fluid">
-            <nav className="row pt-3 pb-3 align-items-center">
+            <nav className="row pt-3 pb-3 align-items-center" id=' subnav'>
                 <div className="">
                     <div className="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 ">
                         <a href="" className="text-decoration-none d-block d-lg-none">
-                            <h1 className="m-0 display-5 font-weight-semi-bold"><span className="text-primary font-weight-bold border px-3 mr-1">E</span>Shopper</h1>
+                            <h1 className="m-0 display-5 font-weight-semi-bold text-dark fw-bold">Fresh Cart</h1>
                         </a>
-                        <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <button type="button" className="navbar-toggler">
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse pages-links row justify-content-between align-items-center w-100" id="navbarCollapse">
@@ -58,7 +57,6 @@ function Subnav() {
                     </div>
                 </div>
             </nav>
-        </div> 
         }
     </>
 )

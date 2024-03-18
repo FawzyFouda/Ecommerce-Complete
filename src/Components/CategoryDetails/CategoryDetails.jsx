@@ -18,7 +18,7 @@ function CategoryDetails() {
     }
     useEffect(() => {
       getCategoryDetails()
-    },[])
+    },[id])
 // ------------------------------------------------------
 // let {data} = useQuery('getCatDetails',getCategoryDetails)
 // ------------------------------------------------------

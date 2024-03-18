@@ -32,29 +32,32 @@ function ProductDetails() {
   // ---------------------------------------------
   async function addProductToCart(productId) {
     const res = await addProductCartApi(productId) 
-    toast.success('Product Added Sucessfully',{
-      position: "top-center"
-    })
   }
   // ---------------------------------------------
-
+iop
 // ---------------------------------------------
   let {data,isLoading} = useQuery('getProductDetails',() => getProductDetails(id))
+  console.log(data)
   return (
     <section id='productDetails'>
-      <div className='container'>
+      {
+        isLoading?
+        <div className='loading'>
+          <div><InfinitySpin
+        visible={true}
+        width="100%"
+        height='100%'
+        color="#4fa94d"
+        ariaLabel="infinity-spin-loading"
+        /></div>
+        </div>:<>
+          <div className='container'>
       <SubnavSidebar/>
       </div>
       <PageHeader title={data?.data.data.title} cat={data?.data.data.category.name}/>
       <div className="container">
-        {
-          isLoading?<InfinitySpin
-          visible={true}
-          width="100%"
-          height='100%'
-          color="#4fa94d"
-          ariaLabel="infinity-spin-loading"
-          />:<div className='productDetailsContent d-flex my-5 justify-content-between'>
+        
+          <div className='productDetailsContent d-flex my-5 justify-content-between'>
           <div className='productImage col-md-4 d-flex flex-column justify-content-center border p-2'>
             <div className='mainImg'>
               <img className='w-100' src={imageId?data?.data.data.images[imageId]:data?.data.data.imageCover} alt={data?.data.data.slug} />
@@ -89,9 +92,11 @@ function ProductDetails() {
               <div className='update'>updated: <span className='global-color-lighter'>{data?.data.data.updatedAt}</span></div>
             </div>
         </div>
-        }
+        
       </div>
       <ToastContainer icon={false} stacked />
+        </>
+      }
     </section>
   )
 }
